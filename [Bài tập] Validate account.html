@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+let regexp =/^[_0-9a-z]{6,}$/;
+function checkAccount(str) {
+    if (regexp.test(str)) return true;
+    return false;
+}
+
+let account1 ="123abc_";
+let account2 ="______";
+let account3 ="1234_";
+console.log(checkAccount(account1));
+console.log(checkAccount(account2));
+console.log(checkAccount(account3));
+</script>
+</body>
+</html>
